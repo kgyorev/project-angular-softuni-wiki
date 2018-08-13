@@ -1,0 +1,13 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<section>
+  <h2>Create new article</h2>
+  <div class="spacer">
+    <form method="POST" action="/article/create">
+      <label>Article title</label>
+      <input type="text" class="title" id="articleTitle" placeholder="Article Title" name="title" required >
+      <label>Content</label>
+      <textarea id="articleContent" rows="5" name="content" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</section>
