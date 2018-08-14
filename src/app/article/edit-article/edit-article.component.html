@@ -1,8 +1,8 @@
 <h1>Welcome to SoftUni Wiki!</h1>
 <section>
-  <h2>Create new article</h2>
-  <div class="spacer">
-    <form #articleForm="ngForm" (ngSubmit)="create()">
+  <h2>Edit article</h2>
+  <div *ngIf="bindingModel" class="spacer">
+    <form #articleForm="ngForm" (ngSubmit)="edit()">
       <label>Article title</label>
       <input type="text" class="title" id="articleTitle" placeholder="Article Title" name="title" required
              minlength="4"

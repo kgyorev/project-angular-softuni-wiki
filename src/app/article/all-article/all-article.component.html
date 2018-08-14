@@ -2,9 +2,9 @@
 <section>
   <h2>All articles</h2>
   <div class="spacer">
-    <ul>
+    <ul *ngFor="let article of articles">
       <li>
-        <a href="/article/details/aaa.html">Aaaaa</a>
+        <a routerLink="/article/details/{{article._id}}">{{article.title}}</a>
       </li>
     </ul>
   </div>

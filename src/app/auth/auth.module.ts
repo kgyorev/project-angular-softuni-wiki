@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {authComponents} from './index';
 import {AuthService} from './auth.service';
 import {CommonModule} from '@angular/common';
+import { NavigationUserComponent } from '../navigation-user/navigation-user.component';
 
 
 @NgModule({

@@ -1,6 +1,5 @@
-export class ArticleModel {
+export class CreateArticleModel {
   constructor(
-    public _id: string,
     public title: string,
     public content: string) {
   }

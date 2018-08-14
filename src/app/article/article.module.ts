@@ -1,0 +1,30 @@
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {articleComponents} from './index';
+import {RouterModule} from '@angular/router';
+import {ArticleService} from './article.service';
+import {BrowserModule} from '@angular/platform-browser';
+import {ArticleRoutingModule} from './article-routing.module';
+import {CommonModule} from '@angular/common';
+import { NavigationArticleComponent } from '../navigation-article/navigation-article.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { EditArticleComponent } from './edit-article/edit-article.component';
+
+
+
+@NgModule({
+  declarations: [...articleComponents, ArticleDetailsComponent, EditArticleComponent],
+  imports: [
+    CommonModule, // Triabva da go ima vav vseki podmodul
+   // BrowserModule, // tuk se menajirat pipe -vete  , tozi triabva da go ima v glavnia modul
+    FormsModule,
+    ArticleRoutingModule
+  ],
+  providers: [ArticleService]
+  // exports: [
+  //   CommonModule // tozi modul sadarja async pipovete i BrowserModule
+  //   // BrowserModule
+  // ]
+})
+export class ArticleModule {
+}
