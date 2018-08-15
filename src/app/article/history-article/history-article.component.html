@@ -1,0 +1,13 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<section>
+  <h2>{{article.title}}</h2>
+  <div class="spacer">
+    <h3>Edit hostory</h3>
+    <ul *ngFor="let articleHistory of articleHistoryLs">
+      <li>
+        <a routerLink="/article/details/edit/{{articleHistory._id}}">{{calcDate(articleHistory.creationDate)}}</a> by
+        <span class="author">{{articleHistory.author.email}}</span>
+      </li>
+    </ul>
+  </div>
+</section>

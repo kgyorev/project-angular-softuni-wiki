@@ -11,10 +11,14 @@ const host = 'http://localhost:1337/';
 
 const createUrl = host + 'article/create';
 const allUrl = host + 'article/all';
+const lockUrl = host + 'article/lock/';
+const unlockUrl = host + 'article/unlock/';
 const detailsUrl = host + 'article/details/';
 const deleteUrl = host + 'article/delete/';
 // const articleById = 'http://localhost:5000/article/';
 const articleByIdEdit = host + 'article/edit/';
+const articleEditDetailsById = host + 'edit/';
+const articleHistoryByIdEdit = host + 'article/history/';
 
 
 @Injectable(
@@ -26,18 +30,25 @@ export class ArticleService {
   constructor(private http: HttpClient) {
   }
 
+  getHomePage() {
+    return this.http.get<any>(host);
+  }
   createArticle(body: CreateArticleModel) {
     return this.http.post(createUrl, body);
   }
 
   getAllArticle() {
-    const val = this.http.get<AllArticleModel>(allUrl);
-    console.dir(val);
-    return val;
+    return this.http.get<AllArticleModel>(allUrl);
   }
 
   getArticleDetails(id: string) {
     return this.http.get<any>(detailsUrl + id);
+  }
+  getArticleLock(id: string) {
+    return this.http.get<any>(lockUrl + id);
+  }
+  getArticleUnLock(id: string) {
+    return this.http.get<any>(unlockUrl + id);
   }
 
   deleteArticle(id: string) {
@@ -51,4 +62,12 @@ export class ArticleService {
   editArticleById(id: string, body: ArticleModel) {
     return this.http.post<ArticleModel>(articleByIdEdit + id, body);
   }
+
+  historyArticleById(id: string) {
+    return this.http.get<any>(articleHistoryByIdEdit + id);
+  }
+  articleEditDetailsById(id: string) {
+    return this.http.get<any>(articleEditDetailsById + id);
+  }
+
 }

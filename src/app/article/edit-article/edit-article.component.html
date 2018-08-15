@@ -1,22 +1,31 @@
 <h1>Welcome to SoftUni Wiki!</h1>
 <section>
-  <h2>Edit article</h2>
+  <h2>Edit article
+  <div *ngIf="authService.isAdmin()" class="controls">
+    <!--{<a href="javascript:void(0)" onClick={(e) => {-->
+    <!--if (window.confirm('Are you sure you wish to delete this article?')) deleteArticle(e)-->
+    <!--}}>[Delete article]</a>}-->
+    <!--{lockStatus && <a href="javascript:void(0)" onClick={(e) => {-->
+    <!--if (window.confirm('Are you sure you wish to unlock this article?')) unLock(e)}}>[Unlock article]</a>}-->
+    <!--{!lockStatus && <a href="javascript:void(0)" onClick={(e) => {-->
+    <!--if (window.confirm('Are you sure you wish to lock this article?'))lock(e)}}>[Lock article]</a>}-->
+    <a href="javascript:void(0)" (click)="deleteArticle()">[Delete article]</a>
+    <a *ngIf="lockedStatus" href="javascript:void(0)" (click)="articleUnLock()">[Unlock article]</a>
+    <a *ngIf="!lockedStatus" href="javascript:void(0)" (click)="articleLock()">[Lock article]</a>
+  </div>
+  </h2>
   <div *ngIf="bindingModel" class="spacer">
     <form #articleForm="ngForm" (ngSubmit)="edit()">
       <label>Article title</label>
-      <input type="text" class="title" id="articleTitle" placeholder="Article Title" name="title" required
-             minlength="4"
-             [(ngModel)]="bindingModel.title"
-             #title="ngModel">
-      <div [hidden]="title.valid || title.pristine" class="alert alert-dark">Title must be at least 4 symbols long</div>
+      <h3>{{bindingModel.title}}</h3>
       <label>Content</label>
-      <textarea id="articleContent" rows="5" name="content" required
+      <textarea [disabled]="lockedStatus && !authService.isAdmin()" id="articleContent" rows="5" name="content" required
                 minlength="10"
                 [(ngModel)]="bindingModel.content"
                 #content="ngModel"
       ></textarea>
       <div [hidden]="content.valid || content.pristine" class="alert alert-dark">Content must be at least 10 symbols long</div>
-      <input type="submit" [disabled]="articleForm.form.invalid" value="Submit">
+      <input *ngIf="!lockedStatus || authService.isAdmin()" type="submit" [disabled]="articleForm.form.invalid" value="Submit">
     </form>
   </div>
 </section>
