@@ -7,10 +7,12 @@ import {ArticleDetailsComponent} from './article-details/article-details.compone
 import {EditArticleComponent} from './edit-article/edit-article.component';
 import {HistoryArticleComponent} from './history-article/history-article.component';
 import {EditDetailsComponent} from './edit-details/edit-details.component';
+import {SearchArticleComponent} from './search-article/search-article.component';
 
 
 const articleRoutes: Routes = [
   {path: 'all', component: AllArticleComponent},
+  {path: 'search', component: SearchArticleComponent},
   {path: 'details/:id', component: ArticleDetailsComponent},
   {path: 'details/edit/:id', component: EditDetailsComponent, canActivate: [AuthGuard]},
   // {path: 'my', component: MyFurnitureComponent},

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navigation-article',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-article.component.css']
 })
 export class NavigationArticleComponent implements OnInit {
+  searchText = '';
 
-  constructor() { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
   }
 
+  search() {
+    this.router.navigateByUrl(`article/search?searchStr=${this.searchText}`);
+  }
 }

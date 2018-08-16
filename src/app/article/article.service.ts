@@ -11,6 +11,7 @@ const host = 'http://localhost:1337/';
 
 const createUrl = host + 'article/create';
 const allUrl = host + 'article/all';
+const searchUrl = host + 'article/search';
 const lockUrl = host + 'article/lock/';
 const unlockUrl = host + 'article/unlock/';
 const detailsUrl = host + 'article/details/';
@@ -33,20 +34,26 @@ export class ArticleService {
   getHomePage() {
     return this.http.get<any>(host);
   }
+
   createArticle(body: CreateArticleModel) {
     return this.http.post(createUrl, body);
   }
 
-  getAllArticle() {
-    return this.http.get<AllArticleModel>(allUrl);
+  getAllArticle(page = 1) {
+    return this.http.get<AllArticleModel>(allUrl + `?page=${page}`);
+  }
+  searchArticle(page = 1, searchText = '') {
+    return this.http.get<AllArticleModel>(searchUrl + `?page=${page}&searchStr=${searchText}`);
   }
 
   getArticleDetails(id: string) {
     return this.http.get<any>(detailsUrl + id);
   }
+
   getArticleLock(id: string) {
     return this.http.get<any>(lockUrl + id);
   }
+
   getArticleUnLock(id: string) {
     return this.http.get<any>(unlockUrl + id);
   }
@@ -66,8 +73,10 @@ export class ArticleService {
   historyArticleById(id: string) {
     return this.http.get<any>(articleHistoryByIdEdit + id);
   }
+
   articleEditDetailsById(id: string) {
     return this.http.get<any>(articleEditDetailsById + id);
   }
+
 
 }

@@ -1,18 +1,18 @@
 import {Component, OnInit} from '@angular/core';
+import {ArticleModel} from '../models/article.model';
 import {ArticleService} from '../article.service';
 import {ToastrService} from 'ngx-toastr';
-import {ArticleModel} from '../models/article.model';
-import {Observable} from 'rxjs';
 import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-all-article',
-  templateUrl: './all-article.component.html',
-  styleUrls: ['./all-article.component.css']
+  selector: 'app-search-article',
+  templateUrl: './search-article.component.html',
+  styleUrls: ['./search-article.component.css']
 })
-export class AllArticleComponent implements OnInit {
+export class SearchArticleComponent implements OnInit {
   articles: ArticleModel[];
   page = 1;
+  searchText = '';
   totalCount = 0;
 
   constructor(private articleService: ArticleService, private toastr: ToastrService, private route: ActivatedRoute,
@@ -23,19 +23,13 @@ export class AllArticleComponent implements OnInit {
     this.route.queryParams
       .subscribe(params => {
         this.page = +params['page'] || 1;
-        this.articleService.getAllArticle(this.page).subscribe(data => {
+        this.searchText = params['searchStr'];
+        this.articleService.searchArticle(this.page, this.searchText).subscribe(data => {
             this.articles = data.articles;
             this.totalCount = Math.ceil(parseInt(data.totalCount, 10) / 10.0);
           }
         );
       });
-
-
-    // const url = this.getUrl(this.page);
-    // this.articleService.getAllArticle(url).subscribe(data => {
-    //   console.dir(data);
-    //   this.articles = data.articles;
-    // });
   }
 
   prevPage() {
@@ -57,7 +51,12 @@ export class AllArticleComponent implements OnInit {
   }
 
   private getUrl(page) {
-    return `article/all?page=${page}`;
+    let url = `article/search?page=${page}`;
+    if (this.searchText) {
+      url += `&searchStr=${this.searchText}`;
+    }
+    return url;
+
   }
 
 }

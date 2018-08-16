@@ -11,11 +11,12 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { HistoryArticleComponent } from './history-article/history-article.component';
 import { EditDetailsComponent } from './edit-details/edit-details.component';
+import { SearchArticleComponent } from './search-article/search-article.component';
 
 
 
 @NgModule({
-  declarations: [...articleComponents, ArticleDetailsComponent, EditArticleComponent, HistoryArticleComponent, EditDetailsComponent],
+  declarations: [...articleComponents, ArticleDetailsComponent, EditArticleComponent, HistoryArticleComponent, EditDetailsComponent, SearchArticleComponent],
   imports: [
     CommonModule, // Triabva da go ima vav vseki podmodul
    // BrowserModule, // tuk se menajirat pipe -vete  , tozi triabva da go ima v glavnia modul

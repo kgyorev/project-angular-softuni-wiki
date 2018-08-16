@@ -2,13 +2,6 @@
 <section>
   <h2>Edit article
   <div *ngIf="authService.isAdmin()" class="controls">
-    <!--{<a href="javascript:void(0)" onClick={(e) => {-->
-    <!--if (window.confirm('Are you sure you wish to delete this article?')) deleteArticle(e)-->
-    <!--}}>[Delete article]</a>}-->
-    <!--{lockStatus && <a href="javascript:void(0)" onClick={(e) => {-->
-    <!--if (window.confirm('Are you sure you wish to unlock this article?')) unLock(e)}}>[Unlock article]</a>}-->
-    <!--{!lockStatus && <a href="javascript:void(0)" onClick={(e) => {-->
-    <!--if (window.confirm('Are you sure you wish to lock this article?'))lock(e)}}>[Lock article]</a>}-->
     <a href="javascript:void(0)" (click)="deleteArticle()">[Delete article]</a>
     <a *ngIf="lockedStatus" href="javascript:void(0)" (click)="articleUnLock()">[Unlock article]</a>
     <a *ngIf="!lockedStatus" href="javascript:void(0)" (click)="articleLock()">[Lock article]</a>

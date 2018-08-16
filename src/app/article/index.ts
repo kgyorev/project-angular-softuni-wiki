@@ -5,6 +5,7 @@ import {ArticleDetailsComponent} from './article-details/article-details.compone
 import {EditArticleComponent} from './edit-article/edit-article.component';
 import {HistoryArticleComponent} from './history-article/history-article.component';
 import {EditDetailsComponent} from './edit-details/edit-details.component';
+import {SearchArticleComponent} from './search-article/search-article.component';
 
 
 export const articleComponents = [
@@ -13,5 +14,6 @@ export const articleComponents = [
   EditArticleComponent,
   HistoryArticleComponent,
   EditDetailsComponent,
+  SearchArticleComponent,
   ArticleDetailsComponent
 ];
