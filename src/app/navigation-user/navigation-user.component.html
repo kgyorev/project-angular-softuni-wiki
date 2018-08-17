@@ -1,6 +1,0 @@
-<header>
-  <a *ngIf="!authService.isAuthenticated()" routerLink="/user/login">Login</a>
-  <a *ngIf="!authService.isAuthenticated()" routerLink="/user/register">Register</a>
-  <span *ngIf="authService.isAuthenticated()">Welcome({{authService.user.username}})!</span>
-  <a *ngIf="authService.isAuthenticated()"  href="javascript:void(0)" (click)="logout()">[Logout]</a>
-</header>
