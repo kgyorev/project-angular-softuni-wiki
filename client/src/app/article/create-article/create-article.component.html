@@ -1,0 +1,22 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<section>
+  <h2>Create new article</h2>
+  <div class="spacer">
+    <form #articleForm="ngForm" (ngSubmit)="create()">
+      <label>Article title</label>
+      <input type="text" class="title" id="articleTitle" placeholder="Article Title" name="title" required
+             minlength="4"
+             [(ngModel)]="bindingModel.title"
+             #title="ngModel">
+      <div [hidden]="title.valid || title.pristine" class="alert alert-dark">Title must be at least 4 symbols long</div>
+      <label>Content</label>
+      <textarea id="articleContent" rows="5" name="content" required
+                minlength="10"
+                [(ngModel)]="bindingModel.content"
+                #content="ngModel"
+      ></textarea>
+      <div [hidden]="content.valid || content.pristine" class="alert alert-dark">Content must be at least 10 symbols long</div>
+      <input type="submit" [disabled]="articleForm.form.invalid" value="Submit">
+    </form>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<section>
+    <h2>Edit article
+        {{#if isUserAuthorized}}
+            <div class="controls">
+                {{#if article.lockedStatus}}
+                    <a href="/article/unlock/{{article._id}}">Unlock article</a>
+                {{else}}
+                    <a href="/article/lock/{{article._id}}">Lock article</a>
+                {{/if}}
+            </div>
+        {{/if}}
+    </h2>
+    <div class="spacer">
+        <form method="POST" action="/article/edit/{{article._id}}">
+            <label>Article title</label>
+            <h3>{{article.title}}</h3>
+            <label>Content</label>
+            {{#if article.lockedStatus}}
+                <textarea disabled readonly=readonly  class="form-control" id="articleContent" rows="5" name="content"
+                          required>{{article.lastEdit.content}}</textarea>
+            {{else}}
+                <textarea class="form-control" id="articleContent" rows="5" name="content"
+                          required>{{article.lastEdit.content}}</textarea>
+            {{/if}}
+            {{#if article.lockedStatus}}
+            {{else}}
+                <input type="submit" href="/article/edit/{{article._id}}" value="Submit">
+            {{/if}}
+            <!--<a class="button" href="javascript:document.getElementById('order-form').submit()">Checkout</a>-->
+        </form>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<section>
+  <h2>Edit article
+  <div *ngIf="authService.isAdmin()" class="controls">
+    <a href="javascript:void(0)" (click)="deleteArticle()">[Delete article]</a>
+    <a *ngIf="lockedStatus" href="javascript:void(0)" (click)="articleUnLock()">[Unlock article]</a>
+    <a *ngIf="!lockedStatus" href="javascript:void(0)" (click)="articleLock()">[Lock article]</a>
+  </div>
+  </h2>
+  <div *ngIf="bindingModel" class="spacer">
+    <form #articleForm="ngForm" (ngSubmit)="edit()">
+      <label>Article title</label>
+      <h3>{{bindingModel.title}}</h3>
+      <label>Content</label>
+      <textarea [disabled]="lockedStatus && !authService.isAdmin()" id="articleContent" rows="5" name="content" required
+                minlength="10"
+                [(ngModel)]="bindingModel.content"
+                #content="ngModel"
+      ></textarea>
+      <div [hidden]="content.valid || content.pristine" class="alert alert-dark">Content must be at least 10 symbols long</div>
+      <input *ngIf="!lockedStatus || authService.isAdmin()" type="submit" [disabled]="articleForm.form.invalid" value="Submit">
+    </form>
+  </div>
+</section>

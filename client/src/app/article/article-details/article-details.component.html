@@ -1,0 +1,12 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<div *ngIf="article"  class="spacer">
+  <h2>{{article.title}}
+    <div *ngIf="authService.isAuthenticated()" class="controls">
+      <a routerLink="/article/edit/{{article._id}}">[edit]</a>
+      <a routerLink="/article/history/{{article._id}}">[history]</a>
+    </div>
+  </h2>
+  <article>
+    {{article.content}}
+  </article>
+</div>

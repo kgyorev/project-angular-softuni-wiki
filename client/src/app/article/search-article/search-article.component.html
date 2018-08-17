@@ -1,0 +1,20 @@
+<h1>Welcome to SoftUni Wiki!</h1>
+<section>
+  <h2>Articles Found</h2>
+  <h3 *ngIf="!articles">Loading..</h3>
+  <div *ngIf="articles" class="spacer">
+    <ul *ngFor="let article of articles; let i = index">
+      <li>
+        <a routerLink="/article/details/{{article._id}}">{{i+1+(page-1)*10}}. {{article.title}}</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div class="pagination">
+      <p *ngIf="page !== 1 || !(articles.length === 0 || articles.length < 10)">Page {{page}} / {{totalCount}}</p>
+      <a *ngIf="page !== 1" href="javascript:void(0)" (click)="prevPage()">&lt;</a>
+      <a *ngIf="!(articles.length === 0 || articles.length < 10)" href="javascript:void(0)"
+         (click)="nextPage()">&gt;</a>
+    </div>
+  </div>
+</section>
