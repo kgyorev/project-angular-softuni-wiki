@@ -3,8 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {RegisterModel} from './models/register.model';
 import {LoginModel} from './models/login.model';
 
-const host = 'https://softuni-wiki-server.herokuapp.com:443/';
-// const host = 'http://localhost:1337/';
+// const host = 'https://softuni-wiki-server.herokuapp.com:443/';
+const host = 'http://localhost:1337/';
 
 const loginUrl = host + 'user/login';
 const registerUrl = host + 'user/register';
