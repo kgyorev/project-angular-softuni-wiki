@@ -1,4 +1,3 @@
-<h1>Welcome to SoftUni Wiki!</h1>
 <section>
   <h2>All articles</h2>
   <h3 *ngIf="!articles">Loading..</h3>
@@ -9,7 +8,7 @@
       </li>
     </ul>
   </div>
-  <div>
+  <div *ngIf="articles">
     <div class="pagination">
       <p>Page {{page}} / {{totalCount}}</p>
       <a *ngIf="page !== 1" href="javascript:void(0)" (click)="prevPage()">&lt;</a>

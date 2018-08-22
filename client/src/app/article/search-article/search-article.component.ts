@@ -25,6 +25,10 @@ export class SearchArticleComponent implements OnInit {
         this.page = +params['page'] || 1;
         this.searchText = params['searchStr'];
         this.articleService.searchArticle(this.page, this.searchText).subscribe(data => {
+
+            if (parseInt(data.totalCount, 10) === 0) {
+              this.toastr.warning('by given search criteria.', 'Articles Not Found!');
+            }
             this.articles = data.articles;
             this.totalCount = Math.ceil(parseInt(data.totalCount, 10) / 10.0);
           }

@@ -14,12 +14,19 @@ module.exports = {
         User.findOne({email: registerArgs.email}).then(user => {
             let errorMsg = '';
             if (user) {
-                errorMsg = 'User with the same username exists!';
+                errorMsg = 'User with the same e-mail exists!';
             }
 
             if (errorMsg) {
                 registerArgs.error = errorMsg;
-                res.render('user/register', registerArgs)
+              //  res.render('user/register', registerArgs)
+                return res.status(401).json({
+                    success: false,
+                    message: errorMsg
+                    // isAuth:true,
+                    // isUserAuthorized: isAdmin,
+                    // user: req.user.email
+                })
             } else {
                 let salt = encryption.generateSalt();
                 let passwordHash = encryption.hashPassword(registerArgs.password, salt);

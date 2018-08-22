@@ -1,4 +1,3 @@
-<h1>Welcome to SoftUni Wiki!</h1>
 <section>
   <h2>Edit article
   <div *ngIf="authService.isAdmin()" class="controls">
@@ -17,7 +16,7 @@
                 [(ngModel)]="bindingModel.content"
                 #content="ngModel"
       ></textarea>
-      <div [hidden]="content.valid || content.pristine" class="alert alert-dark">Content must be at least 10 symbols long</div>
+      <div [hidden]="content.valid || content.pristine" class="errorMessage">Content must be at least 10 symbols long</div>
       <input *ngIf="!lockedStatus || authService.isAdmin()" type="submit" [disabled]="articleForm.form.invalid" value="Submit">
     </form>
   </div>

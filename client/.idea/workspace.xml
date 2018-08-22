@@ -3,14 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="afbbf13e-ce03-4da7-943d-240a1018f226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/article/article.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/article.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/404/404.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/404/404.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/all-article/all-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/all-article/all-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/article-details/article-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/article-details/article-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/create-article/create-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/create-article/create-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/history-article/history-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/history-article/history-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/search-article/search-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/search-article/search-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/article/search-article/search-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/search-article/search-article.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/navigation-user/navigation-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navigation-user/navigation-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/interceptors/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/interceptors/error.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/stylesheets/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/stylesheets/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/server/controllers/users-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../server/server/controllers/users-controller.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -90,34 +101,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="html" value="10" />
+          <entry key="css" value="4" />
+          <entry key="html" value="27" />
           <entry key="json" value="2" />
-          <entry key="ts" value="11" />
+          <entry key="ts" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="10" />
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="27" />
           <entry key="JSON" value="2" />
-          <entry key="TypeScript" value="11" />
+          <entry key="TypeScript" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="21" />
-          <entry key="html" value="21" />
+          <entry key="css" value="29" />
+          <entry key="html" value="135" />
           <entry key="json" value="2" />
-          <entry key="ts" value="122" />
+          <entry key="ts" value="317" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="21" />
-          <entry key="HTML" value="21" />
+          <entry key="CSS" value="29" />
+          <entry key="HTML" value="135" />
           <entry key="JSON" value="2" />
-          <entry key="TypeScript" value="122" />
+          <entry key="TypeScript" value="317" />
         </counts>
       </usages-collector>
     </session>
@@ -127,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/article/all-article/all-article.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="78" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -143,15 +154,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/navigation-user/navigation-user.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -161,57 +163,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.component.html">
+        <entry file="file://$PROJECT_DIR$/src/app/article/history-article/history-article.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="646">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/article/search-article/search-article.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="136">
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/article/article.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/app/auth/login/login.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/auth/register/register.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/home/home.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -234,57 +225,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/auth/login/login.component.css" />
         <option value="$PROJECT_DIR$/src/app/article/models/create-article.model.ts" />
         <option value="$PROJECT_DIR$/src/app/article/models/article.model.ts" />
         <option value="$PROJECT_DIR$/src/app/article/models/all-article.model.ts" />
-        <option value="$PROJECT_DIR$/src/app/auth/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/app/article/navigation-article/navigation-article.component.html" />
         <option value="$PROJECT_DIR$/src/app/article/article.module.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/index.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/auth.module.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/register/register.component.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/models/register.model.ts" />
-        <option value="$PROJECT_DIR$/src/app/auth/register/register.component.html" />
         <option value="$PROJECT_DIR$/src/app/article/create-article/create-article.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/article/create-article/create-article.component.html" />
-        <option value="$PROJECT_DIR$/src/app/article/article-details/article-details.component.html" />
         <option value="$PROJECT_DIR$/src/app/article/history-article/history-article.component.ts" />
         <option value="$PROJECT_DIR$/src/app/article/models/article-history.model.ts" />
         <option value="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.ts" />
         <option value="$PROJECT_DIR$/src/app/home/home.component.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/guards/admin.guard.ts" />
-        <option value="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html" />
-        <option value="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html" />
         <option value="$PROJECT_DIR$/src/app/interceptors/jwt.interceptor.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/src/assets/stylesheets/site.css" />
         <option value="$PROJECT_DIR$/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/src/app/article/all-article/all-article.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/article/all-article/all-article.component.html" />
         <option value="$PROJECT_DIR$/src/app/article/index.ts" />
         <option value="$PROJECT_DIR$/src/app/article/article-routing.module.ts" />
-        <option value="$PROJECT_DIR$/src/app/article/search-article/search-article.component.html" />
-        <option value="$PROJECT_DIR$/src/app/article/search-article/search-article.component.ts" />
         <option value="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/article/history-article/history-article.component.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/src/app/404/404.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/404/404.component.html" />
         <option value="$PROJECT_DIR$/src/app/404/404.component.css" />
         <option value="$PROJECT_DIR$/src/app/article/article-details/article-details.component.ts" />
         <option value="$PROJECT_DIR$/angular.json" />
         <option value="$PROJECT_DIR$/src/app/navigation-user/navigation-user.component.ts" />
         <option value="$PROJECT_DIR$/src/app/auth/auth.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/home/home.component.html" />
         <option value="$PROJECT_DIR$/src/app/article/article.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts" />
         <option value="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.html" />
         <option value="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.css" />
         <option value="$PROJECT_DIR$/src/app/navigation-user/navigation-user.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/article/search-article/search-article.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/interceptors/error.interceptor.ts" />
+        <option value="$PROJECT_DIR$/src/styles.css" />
+        <option value="$PROJECT_DIR$/src/assets/stylesheets/site.css" />
+        <option value="$PROJECT_DIR$/src/app/404/404.component.html" />
+        <option value="$PROJECT_DIR$/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/article-details/article-details.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/create-article/create-article.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/history-article/history-article.component.html" />
+        <option value="$PROJECT_DIR$/src/app/auth/login/login.component.html" />
+        <option value="$PROJECT_DIR$/src/app/auth/register/register.component.html" />
+        <option value="$PROJECT_DIR$/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/all-article/all-article.component.html" />
+        <option value="$PROJECT_DIR$/src/app/article/search-article/search-article.component.html" />
       </list>
     </option>
   </component>
@@ -381,6 +372,22 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="article" type="462c0819:PsiDirectoryNode" />
               <item name="edit-article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="edit-details" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="history-article" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="client" type="b2602c69:ProjectViewProjectNode" />
@@ -569,12 +576,12 @@
       <workItem from="1534506631081" duration="136000" />
       <workItem from="1534506987347" duration="24000" />
       <workItem from="1534507019059" duration="1218000" />
-      <workItem from="1534509295524" duration="5843000" />
+      <workItem from="1534509295524" duration="9899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78523000" />
+    <option name="totallyTimeSpent" value="82579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -624,23 +631,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/javascripts/jquery-1.10.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="3154" column="6" selection-start-line="3154" selection-start-column="6" selection-end-line="3154" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -667,20 +657,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/stylesheets/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/create-article/create-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/article/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -702,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/search-article/search-article.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -725,31 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/history-article/history-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="1" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -766,13 +714,6 @@
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/404/404.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -817,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/article-details/article-details.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/article/article-details/article-details.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -843,11 +777,6 @@
         <state relative-caret-position="221">
           <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/auth/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/auth/login/login.component.ts">
@@ -893,59 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/auth/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/all-article/all-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/article/article.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/article/search-article/search-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -956,10 +836,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/search-article/search-article.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/interceptors/error.interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="179" column="13" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/stylesheets/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="181" column="2" selection-start-line="181" selection-start-column="2" selection-end-line="181" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/404/404.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/article-details/article-details.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/create-article/create-article.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/history-article/history-article.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/auth/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/navigation-user/navigation-user.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/all-article/all-article.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/article/search-article/search-article.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>

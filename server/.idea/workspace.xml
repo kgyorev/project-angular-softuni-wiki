@@ -3,14 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="b8a34daa-06c7-462e-86d3-017e53a4bf15" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/article.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/article.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/404/404.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/404/404.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/all-article/all-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/all-article/all-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/article-details/article-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/article-details/article-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/create-article/create-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/create-article/create-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/edit-details/edit-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/edit-details/edit-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/history-article/history-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/history-article/history-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/auth/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/navigation-article/navigation-article.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/navigation-article/navigation-article.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/navigation-user/navigation-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/navigation-user/navigation-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/interceptors/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/interceptors/error.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/stylesheets/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/assets/stylesheets/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/users-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/users-controller.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -71,6 +82,16 @@
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="56" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="56" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -93,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/config/settings.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -148,11 +169,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/controllers/users-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2142">
-              <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -176,8 +197,8 @@
         <option value="$PROJECT_DIR$/server/controllers/home-controller.js" />
         <option value="$PROJECT_DIR$/server/config/routes.js" />
         <option value="$PROJECT_DIR$/server/config/settings.js" />
-        <option value="$PROJECT_DIR$/server/controllers/users-controller.js" />
         <option value="$PROJECT_DIR$/server/controllers/article-controller.js" />
+        <option value="$PROJECT_DIR$/server/controllers/users-controller.js" />
       </list>
     </option>
   </component>
@@ -347,12 +368,12 @@
       <workItem from="1534401695800" duration="2863000" />
       <workItem from="1534506929477" duration="42000" />
       <workItem from="1534507143514" duration="1001000" />
-      <workItem from="1534761945491" duration="1200000" />
+      <workItem from="1534761945491" duration="2538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115140000" />
+    <option name="totallyTimeSpent" value="116478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -409,12 +430,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/users-controller.js</url>
-          <line>111</line>
+          <line>118</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/users-controller.js</url>
-          <line>126</line>
+          <line>133</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -434,7 +455,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/users-controller.js</url>
-          <line>90</line>
+          <line>97</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -665,17 +686,17 @@
     <entry file="file://$PROJECT_DIR$/server/config/auth.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/users-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/config/settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/users-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>

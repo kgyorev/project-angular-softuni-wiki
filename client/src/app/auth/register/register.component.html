@@ -1,4 +1,3 @@
-<h1>Welcome to SoftUni Wiki!</h1>
 <section>
   <h2>Register</h2>
   <div class="spacer">
@@ -10,7 +9,7 @@
              [(ngModel)]="model.email"
              #email="ngModel"
             >
-      <div [hidden]="email.valid || email.pristine" class="alert alert-dark">
+      <div [hidden]="email.valid || email.pristine" class="errorMessage">
         Please provide a correct email address
       </div>
       <label>Password:</label>
@@ -18,14 +17,14 @@
              [(ngModel)]="model.password"
              #password="ngModel"
              minlength="4">
-      <div [hidden]="password.valid || password.pristine" class="alert alert-dark">
+      <div [hidden]="password.valid || password.pristine" class="errorMessage">
         Password must have at least 4 characters
       </div>
       <label>Repeat password:</label>
       <input type="password" class="form-control" id="repeatedPassword" placeholder="Confirm Password" required name="repeatedPassword"
              [(ngModel)]="model.repeatedPassword"
              #repeatedPassword="ngModel">
-      <div [hidden]="password.value === repeatedPassword.value || repeatedPassword.pristine" class="alert alert-dark">
+      <div [hidden]="password.value === repeatedPassword.value || repeatedPassword.pristine" class="errorMessage">
         Passwords do not match!
       </div>
       <input type="submit" [disabled]="registerForm.form.invalid" value="Register">

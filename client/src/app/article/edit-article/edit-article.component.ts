@@ -31,10 +31,12 @@ export class EditArticleComponent implements OnInit {
   }
 
   edit() {
-    this.articleService.editArticleById(this.bindingModel._id, this.bindingModel).subscribe(() => {
-      this.toastr.success('Edited Furniture', 'Success!');
-      this.router.navigate(['/article/details/' + this.bindingModel._id]);
-    });
+    if (confirm('Are you sure to edit this article?')) {
+      this.articleService.editArticleById(this.bindingModel._id, this.bindingModel).subscribe(() => {
+        this.toastr.success('Edited Article', 'Success!');
+        this.router.navigate(['/article/details/' + this.bindingModel._id]);
+      });
+    }
   }
 
   deleteArticle() {

@@ -16,7 +16,8 @@ export class ErrorInterceptor implements HttpInterceptor {
     return next.handle(request).pipe(catchError((err: any) => {
       switch (err.status) {
         case 401:
-          this.toastr.error(err.error.message, 'Warning!');
+          console.dir(err);
+          this.toastr.error(err.error.message, 'Error!');
           break;
         case 400:
           const message = Object.keys(err.error.errors).map(e => err.error.errors[e]).join('\n');
