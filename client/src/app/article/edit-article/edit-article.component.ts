@@ -38,23 +38,32 @@ export class EditArticleComponent implements OnInit {
   }
 
   deleteArticle() {
-    this.articleService.deleteArticle(this.bindingModel._id).subscribe(() => {
-      this.toastr.success('Deleted Article', 'Success!');
-      this.router.navigate(['/article/all']);
-    });
+    if (confirm('Are you sure to delete this article?')) {
+      this.articleService.deleteArticle(this.bindingModel._id).subscribe(() => {
+        this.toastr.success('Deleted Article', 'Success!');
+        this.router.navigate(['/home']);
+      });
+    }
+
   }
 
   articleLock() {
-    this.articleService.getArticleLock(this.bindingModel._id).subscribe(() => {
-      this.toastr.success('Lock Article', 'Success!');
-      this.router.navigate(['/article/details/' + this.bindingModel._id]);
-    });
+    if (confirm('Are you sure to lock this article?')) {
+      this.articleService.getArticleLock(this.bindingModel._id).subscribe(() => {
+        this.toastr.success('Lock Article', 'Success!');
+        this.ngOnInit();
+        //   this.router.navigate(['/article/details/' + this.bindingModel._id]);
+      });
+    }
   }
 
   articleUnLock() {
-    this.articleService.getArticleUnLock(this.bindingModel._id).subscribe(() => {
-      this.toastr.success('Unlock Article', 'Success!');
-      this.router.navigate(['/article/details/' + this.bindingModel._id]);
-    });
+    if (confirm('Are you sure to unlock this article?')) {
+      this.articleService.getArticleUnLock(this.bindingModel._id).subscribe(() => {
+        this.toastr.success('Unlock Article', 'Success!');
+        this.ngOnInit();
+        // this.router.navigate(['/article/details/' + this.bindingModel._id]);
+      });
+    }
   }
 }

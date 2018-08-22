@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {RegisterModel} from './models/register.model';
 import {LoginModel} from './models/login.model';
+import {ToastrService} from 'ngx-toastr';
 
 // const host = 'https://softuni-wiki-server.herokuapp.com:443/';
 const host = 'http://localhost:1337/';
@@ -11,7 +12,7 @@ const registerUrl = host + 'user/register';
 
 @Injectable()
 export class AuthService {
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private toastr: ToastrService) {
   }
 
   register(body: RegisterModel) {
@@ -23,6 +24,7 @@ export class AuthService {
   }
 
   logout() {
+    this.toastr.success('Successfully Logout', 'Success!');
     localStorage.clear();
   }
 

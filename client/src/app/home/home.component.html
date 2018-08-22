@@ -13,9 +13,9 @@
 </section>
 <section id="recent">
   <h2>Recently added articles</h2>
-  <ul *ngFor="let article of articles">
+  <ul *ngFor="let article of articles; let i = index">
     <li>
-      <a routerLink="/article/details/{{article._id}}">{{article.title}}</a>
+      <a routerLink="/article/details/{{article._id}}">{{i+1}}.  {{article.title}}</a>
     </li>
   </ul>
 </section>

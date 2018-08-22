@@ -58,7 +58,7 @@ export class ArticleService {
   }
 
   deleteArticle(id: string) {
-    return this.http.delete(deleteUrl + id);
+    return this.http.get(deleteUrl + id);
   }
 
   // getArticleById(id: string) {
