@@ -4,8 +4,8 @@ import {ArticleModel} from './models/article.model';
 import {CreateArticleModel} from './models/create-article.model';
 import {AllArticleModel} from './models/all-article.model';
 
-// const host = 'https://softuni-wiki-server.herokuapp.com:443/';
-const host = 'http://localhost:1337/';
+const host = 'https://softuni-wiki-server.herokuapp.com:443/';
+// const host = 'http://localhost:1337/';
 
 
 const createUrl = host + 'article/create';

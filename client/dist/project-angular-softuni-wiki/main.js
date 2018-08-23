@@ -41,7 +41,7 @@ module.exports = "\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h1 class=\"errorMessage\">Page Not Found</h1>\n</div>\n"
+module.exports = "<div>\n  <h2 class=\"errorMessage\">Page Not Found</h2>\n</div>\n"
 
 /***/ }),
 
@@ -107,7 +107,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Wiki</title>\n  <link rel='stylesheet' href='../assets/stylesheets/site.css'/>\n  <script src=\"../assets/javascripts/jquery-1.10.2.js\"></script>\n  <script src=\"../assets/javascripts/bootstrap.js\"></script>\n</head>\n\n<body>\n<div>\n  <!--<aside>-->\n  <!--<div class=\"center\">-->\n  <!--<img class=\"logo\" src=\"../assets/img/logo.png\" alt=\"logo\">-->\n  <!--</div>-->\n\n  <!--<nav>-->\n  <!--<a href=\"/\">Main Page</a>-->\n  <!--<a href=\"article.html\">Latest Article</a>-->\n  <!--<a href=\"/article/all\">All Articles</a>-->\n  <!--<form>-->\n  <!--<input type=\"text\">-->\n  <!--<input type=\"submit\" value=\"Search\">-->\n  <!--</form>-->\n  <!--<a href=\"/article/create\">Create New Article</a>-->\n  <!--</nav>-->\n  <!--</aside>-->\n <app-navigation-article></app-navigation-article>\n  <div id=\"container\">\n    <!--<header>-->\n      <!--<a href=\"/user/login\">Login</a>-->\n      <!--<a href=\"/user/register\">Register</a>-->\n      <!--<span>Welcome(TEST)!</span>-->\n      <!--<a href=\"/user/logout\">[Logout]</a>-->\n    <!--</header>-->\n    <app-navigation-user></app-navigation-user>\n    <router-outlet></router-outlet>\n    <footer>\n      SoftUni Wiki &copy; 2018\n    </footer>\n  </div>\n</div>\n</body>\n\n</html>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Wiki</title>\n  <link rel='stylesheet' href='../assets/stylesheets/site.css'/>\n  <script src=\"../assets/javascripts/jquery-1.10.2.js\"></script>\n  <script src=\"../assets/javascripts/bootstrap.js\"></script>\n</head>\n\n<body>\n<div>\n  <!--<aside>-->\n  <!--<div class=\"center\">-->\n  <!--<img class=\"logo\" src=\"../assets/img/logo.png\" alt=\"logo\">-->\n  <!--</div>-->\n\n  <!--<nav>-->\n  <!--<a href=\"/\">Main Page</a>-->\n  <!--<a href=\"article.html\">Latest Article</a>-->\n  <!--<a href=\"/article/all\">All Articles</a>-->\n  <!--<form>-->\n  <!--<input type=\"text\">-->\n  <!--<input type=\"submit\" value=\"Search\">-->\n  <!--</form>-->\n  <!--<a href=\"/article/create\">Create New Article</a>-->\n  <!--</nav>-->\n  <!--</aside>-->\n <app-navigation-article></app-navigation-article>\n  <div id=\"container\">\n    <!--<header>-->\n      <!--<a href=\"/user/login\">Login</a>-->\n      <!--<a href=\"/user/register\">Register</a>-->\n      <!--<span>Welcome(TEST)!</span>-->\n      <!--<a href=\"/user/logout\">[Logout]</a>-->\n    <!--</header>-->\n    <app-navigation-user></app-navigation-user>\n    <h1>Welcome to SoftUni Wiki!</h1>\n    <router-outlet></router-outlet>\n    <footer>\n      SoftUni Wiki &copy; 2018\n    </footer>\n  </div>\n</div>\n</body>\n\n</html>\n"
 
 /***/ }),
 
@@ -318,7 +318,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>All articles</h2>\n  <h3 *ngIf=\"!articles\">Loading..</h3>\n  <div *ngIf=\"articles\" class=\"spacer\">\n    <ul *ngFor=\"let article of articles; let i = index\">\n      <li>\n        <a routerLink=\"/article/details/{{article._id}}\">{{i+1+(page-1)*10}}. {{article.title}}</a>\n      </li>\n    </ul>\n  </div>\n  <div>\n    <div class=\"pagination\">\n      <p>Page {{page}} / {{totalCount}}</p>\n      <a *ngIf=\"page !== 1\" href=\"javascript:void(0)\" (click)=\"prevPage()\">&lt;</a>\n      <a *ngIf=\"!(articles.length === 0 || articles.length < 10)\" href=\"javascript:void(0)\"\n         (click)=\"nextPage()\">&gt;</a>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <h2>All articles</h2>\n  <h3 *ngIf=\"!articles\">Loading..</h3>\n  <div *ngIf=\"articles\" class=\"spacer\">\n    <ul *ngFor=\"let article of articles; let i = index\">\n      <li>\n        <a routerLink=\"/article/details/{{article._id}}\">{{i+1+(page-1)*10}}. {{article.title}}</a>\n      </li>\n    </ul>\n  </div>\n  <div *ngIf=\"articles\">\n    <div class=\"pagination\">\n      <p>Page {{page}} / {{totalCount}}</p>\n      <a *ngIf=\"page !== 1\" href=\"javascript:void(0)\" (click)=\"prevPage()\">&lt;</a>\n      <a *ngIf=\"!(articles.length === 0 || articles.length < 10)\" href=\"javascript:void(0)\"\n         (click)=\"nextPage()\">&gt;</a>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -427,7 +427,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<div *ngIf=\"article\"  class=\"spacer\">\n  <h2>{{article.title}}\n    <div *ngIf=\"authService.isAuthenticated()\" class=\"controls\">\n      <a routerLink=\"/article/edit/{{article._id}}\">[edit]</a>\n      <a routerLink=\"/article/history/{{article._id}}\">[history]</a>\n    </div>\n  </h2>\n  <article>\n    {{article.content}}\n  </article>\n</div>\n"
+module.exports = "<div *ngIf=\"article\"  class=\"spacer\">\n  <h2>{{article.title}}\n    <div *ngIf=\"authService.isAuthenticated()\" class=\"controls\">\n      <a routerLink=\"/article/edit/{{article._id}}\">[edit]</a>\n      <a routerLink=\"/article/history/{{article._id}}\">[history]</a>\n    </div>\n  </h2>\n  <article>\n    {{article.content}}\n  </article>\n</div>\n"
 
 /***/ }),
 
@@ -686,7 +686,7 @@ var ArticleService = /** @class */ (function () {
         return this.http.get(unlockUrl + id);
     };
     ArticleService.prototype.deleteArticle = function (id) {
-        return this.http.delete(deleteUrl + id);
+        return this.http.get(deleteUrl + id);
     };
     // getArticleById(id: string) {
     //   return this.http.get<ArticleModel>(furnitureById + id);
@@ -729,7 +729,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>Create new article</h2>\n  <div class=\"spacer\">\n    <form #articleForm=\"ngForm\" (ngSubmit)=\"create()\">\n      <label>Article title</label>\n      <input type=\"text\" class=\"title\" id=\"articleTitle\" placeholder=\"Article Title\" name=\"title\" required\n             minlength=\"4\"\n             [(ngModel)]=\"bindingModel.title\"\n             #title=\"ngModel\">\n      <div [hidden]=\"title.valid || title.pristine\" class=\"alert alert-dark\">Title must be at least 4 symbols long</div>\n      <label>Content</label>\n      <textarea id=\"articleContent\" rows=\"5\" name=\"content\" required\n                minlength=\"10\"\n                [(ngModel)]=\"bindingModel.content\"\n                #content=\"ngModel\"\n      ></textarea>\n      <div [hidden]=\"content.valid || content.pristine\" class=\"alert alert-dark\">Content must be at least 10 symbols long</div>\n      <input type=\"submit\" [disabled]=\"articleForm.form.invalid\" value=\"Submit\">\n    </form>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <h2>Create new article</h2>\n  <div class=\"spacer\">\n    <form #articleForm=\"ngForm\" (ngSubmit)=\"create()\">\n      <label>Article title</label>\n      <input type=\"text\" class=\"title\" id=\"articleTitle\" placeholder=\"Article Title\" name=\"title\" required\n             minlength=\"4\"\n             [(ngModel)]=\"bindingModel.title\"\n             #title=\"ngModel\">\n      <div [hidden]=\"title.valid || title.pristine\" class=\"errorMessage\">Title must be at least 4 symbols long</div>\n      <label>Content</label>\n      <textarea id=\"articleContent\" rows=\"5\" name=\"content\" required\n                minlength=\"10\"\n                [(ngModel)]=\"bindingModel.content\"\n                #content=\"ngModel\"\n      ></textarea>\n      <div [hidden]=\"content.valid || content.pristine\" class=\"errorMessage\">Content must be at least 10 symbols long</div>\n      <input type=\"submit\" [disabled]=\"articleForm.form.invalid\" value=\"Submit\">\n    </form>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -801,7 +801,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>Edit article\n  <div *ngIf=\"authService.isAdmin()\" class=\"controls\">\n    <a href=\"javascript:void(0)\" (click)=\"deleteArticle()\">[Delete article]</a>\n    <a *ngIf=\"lockedStatus\" href=\"javascript:void(0)\" (click)=\"articleUnLock()\">[Unlock article]</a>\n    <a *ngIf=\"!lockedStatus\" href=\"javascript:void(0)\" (click)=\"articleLock()\">[Lock article]</a>\n  </div>\n  </h2>\n  <div *ngIf=\"bindingModel\" class=\"spacer\">\n    <form #articleForm=\"ngForm\" (ngSubmit)=\"edit()\">\n      <label>Article title</label>\n      <h3>{{bindingModel.title}}</h3>\n      <label>Content</label>\n      <textarea [disabled]=\"lockedStatus && !authService.isAdmin()\" id=\"articleContent\" rows=\"5\" name=\"content\" required\n                minlength=\"10\"\n                [(ngModel)]=\"bindingModel.content\"\n                #content=\"ngModel\"\n      ></textarea>\n      <div [hidden]=\"content.valid || content.pristine\" class=\"alert alert-dark\">Content must be at least 10 symbols long</div>\n      <input *ngIf=\"!lockedStatus || authService.isAdmin()\" type=\"submit\" [disabled]=\"articleForm.form.invalid\" value=\"Submit\">\n    </form>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <h2>Edit article\n  <div *ngIf=\"authService.isAdmin()\" class=\"controls\">\n    <a href=\"javascript:void(0)\" (click)=\"deleteArticle()\">[Delete article]</a>\n    <a *ngIf=\"lockedStatus\" href=\"javascript:void(0)\" (click)=\"articleUnLock()\">[Unlock article]</a>\n    <a *ngIf=\"!lockedStatus\" href=\"javascript:void(0)\" (click)=\"articleLock()\">[Lock article]</a>\n  </div>\n  </h2>\n  <div *ngIf=\"bindingModel\" class=\"spacer\">\n    <form #articleForm=\"ngForm\" (ngSubmit)=\"edit()\">\n      <label>Article title</label>\n      <h3>{{bindingModel.title}}</h3>\n      <label>Content</label>\n      <textarea [disabled]=\"lockedStatus && !authService.isAdmin()\" id=\"articleContent\" rows=\"5\" name=\"content\" required\n                minlength=\"10\"\n                [(ngModel)]=\"bindingModel.content\"\n                #content=\"ngModel\"\n      ></textarea>\n      <div [hidden]=\"content.valid || content.pristine\" class=\"errorMessage\">Content must be at least 10 symbols long</div>\n      <input *ngIf=\"!lockedStatus || authService.isAdmin()\" type=\"submit\" [disabled]=\"articleForm.form.invalid\" value=\"Submit\">\n    </form>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -857,31 +857,41 @@ var EditArticleComponent = /** @class */ (function () {
     };
     EditArticleComponent.prototype.edit = function () {
         var _this = this;
-        this.articleService.editArticleById(this.bindingModel._id, this.bindingModel).subscribe(function () {
-            _this.toastr.success('Edited Furniture', 'Success!');
-            _this.router.navigate(['/article/details/' + _this.bindingModel._id]);
-        });
+        if (confirm('Are you sure to edit this article?')) {
+            this.articleService.editArticleById(this.bindingModel._id, this.bindingModel).subscribe(function () {
+                _this.toastr.success('Edited Article', 'Success!');
+                _this.router.navigate(['/article/details/' + _this.bindingModel._id]);
+            });
+        }
     };
     EditArticleComponent.prototype.deleteArticle = function () {
         var _this = this;
-        this.articleService.deleteArticle(this.bindingModel._id).subscribe(function () {
-            _this.toastr.success('Deleted Article', 'Success!');
-            _this.router.navigate(['/article/all']);
-        });
+        if (confirm('Are you sure to delete this article?')) {
+            this.articleService.deleteArticle(this.bindingModel._id).subscribe(function () {
+                _this.toastr.success('Deleted Article', 'Success!');
+                _this.router.navigate(['/home']);
+            });
+        }
     };
     EditArticleComponent.prototype.articleLock = function () {
         var _this = this;
-        this.articleService.getArticleLock(this.bindingModel._id).subscribe(function () {
-            _this.toastr.success('Lock Article', 'Success!');
-            _this.router.navigate(['/article/details/' + _this.bindingModel._id]);
-        });
+        if (confirm('Are you sure to lock this article?')) {
+            this.articleService.getArticleLock(this.bindingModel._id).subscribe(function () {
+                _this.toastr.success('Lock Article', 'Success!');
+                _this.ngOnInit();
+                //   this.router.navigate(['/article/details/' + this.bindingModel._id]);
+            });
+        }
     };
     EditArticleComponent.prototype.articleUnLock = function () {
         var _this = this;
-        this.articleService.getArticleUnLock(this.bindingModel._id).subscribe(function () {
-            _this.toastr.success('Unlock Article', 'Success!');
-            _this.router.navigate(['/article/details/' + _this.bindingModel._id]);
-        });
+        if (confirm('Are you sure to unlock this article?')) {
+            this.articleService.getArticleUnLock(this.bindingModel._id).subscribe(function () {
+                _this.toastr.success('Unlock Article', 'Success!');
+                _this.ngOnInit();
+                // this.router.navigate(['/article/details/' + this.bindingModel._id]);
+            });
+        }
     };
     EditArticleComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -917,7 +927,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<div class=\"container\">\n  <div class=\"spacer\">\n    <h2> {{article.title}}\n    </h2>\n    <article>\n      {{articleHistory.content}}\n    </article>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"spacer\">\n    <h2> {{article.title}}\n    </h2>\n    <article>\n      {{articleHistory.content}}\n    </article>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -993,7 +1003,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>{{article.title}}</h2>\n  <div class=\"spacer\">\n    <h3>Edit hostory</h3>\n    <ul *ngFor=\"let articleHistory of articleHistoryLs;let i=index\">\n      <li>\n        <a routerLink=\"/article/details/edit/{{articleHistory._id}}\">{{i+1}}. {{i===0?\"Created On\":\"Updated On\"}}{{calcDate(articleHistory.creationDate)}}</a> by\n        <span class=\"author\">{{articleHistory.author.email}}</span>\n      </li>\n    </ul>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <h2>{{article.title}}</h2>\n  <div class=\"spacer\">\n    <h3>Edit hostory</h3>\n    <ul *ngFor=\"let articleHistory of articleHistoryLs;let i=index\">\n      <li>\n        <a routerLink=\"/article/details/edit/{{articleHistory._id}}\">{{i+1}}. {{i===0?\"Created On\":\"Updated On\"}}{{calcDate(articleHistory.creationDate)}}</a> by\n        <span class=\"author\">{{articleHistory.author.email}}</span>\n      </li>\n    </ul>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -1178,7 +1188,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>Articles Found</h2>\n  <h3 *ngIf=\"!articles\">Loading..</h3>\n  <div *ngIf=\"articles\" class=\"spacer\">\n    <ul *ngFor=\"let article of articles; let i = index\">\n      <li>\n        <a routerLink=\"/article/details/{{article._id}}\">{{i+1+(page-1)*10}}. {{article.title}}</a>\n      </li>\n    </ul>\n  </div>\n  <div>\n    <div class=\"pagination\">\n      <p *ngIf=\"page !== 1 || !(articles.length === 0 || articles.length < 10)\">Page {{page}} / {{totalCount}}</p>\n      <a *ngIf=\"page !== 1\" href=\"javascript:void(0)\" (click)=\"prevPage()\">&lt;</a>\n      <a *ngIf=\"!(articles.length === 0 || articles.length < 10)\" href=\"javascript:void(0)\"\n         (click)=\"nextPage()\">&gt;</a>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <h2>Articles Found</h2>\n  <h3 *ngIf=\"!articles\">Loading..</h3>\n  <div *ngIf=\"articles\" class=\"spacer\">\n    <ul *ngFor=\"let article of articles; let i = index\">\n      <li>\n        <a routerLink=\"/article/details/{{article._id}}\">{{i+1+(page-1)*10}}. {{article.title}}</a>\n      </li>\n    </ul>\n    <h3 class=\"center\" *ngIf=\"articles.length===0\">Articles Not Found.</h3>\n  </div>\n  <div *ngIf=\"articles\">\n    <div class=\"pagination\">\n      <p *ngIf=\"page !== 1 || !(articles.length === 0 || articles.length < 10)\">Page {{page}} / {{totalCount}}</p>\n      <a *ngIf=\"page !== 1\" href=\"javascript:void(0)\" (click)=\"prevPage()\">&lt;</a>\n      <a *ngIf=\"!(articles.length === 0 || articles.length < 10)\" href=\"javascript:void(0)\"\n         (click)=\"nextPage()\">&gt;</a>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -1226,6 +1236,9 @@ var SearchArticleComponent = /** @class */ (function () {
             _this.page = +params['page'] || 1;
             _this.searchText = params['searchStr'];
             _this.articleService.searchArticle(_this.page, _this.searchText).subscribe(function (data) {
+                if (parseInt(data.totalCount, 10) === 0) {
+                    _this.toastr.warning('by given search criteria.', 'Articles Not Found!');
+                }
                 _this.articles = data.articles;
                 _this.totalCount = Math.ceil(parseInt(data.totalCount, 10) / 10.0);
             });
@@ -1328,6 +1341,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1339,13 +1353,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var host = 'https://softuni-wiki-server.herokuapp.com:443/';
 // const host = 'http://localhost:1337/';
 var loginUrl = host + 'user/login';
 var registerUrl = host + 'user/register';
 var AuthService = /** @class */ (function () {
-    function AuthService(http) {
+    function AuthService(http, toastr) {
         this.http = http;
+        this.toastr = toastr;
     }
     AuthService.prototype.register = function (body) {
         return this.http.post(registerUrl, body);
@@ -1354,6 +1370,7 @@ var AuthService = /** @class */ (function () {
         return this.http.post(loginUrl, body);
     };
     AuthService.prototype.logout = function () {
+        this.toastr.success('Successfully Logout', 'Success!');
         localStorage.clear();
     };
     AuthService.prototype.isAuthenticated = function () {
@@ -1375,7 +1392,7 @@ var AuthService = /** @class */ (function () {
     });
     AuthService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], ngx_toastr__WEBPACK_IMPORTED_MODULE_2__["ToastrService"]])
     ], AuthService);
     return AuthService;
 }());
@@ -1475,7 +1492,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>Login</h2>\n  <div class=\"spacer\">\n    <form (ngSubmit)=\"login()\" #loginForm=\"ngForm\">\n      <label>Email:</label>\n      <input type=\"text\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\" name=\"email\"\n             required\n             email\n             [(ngModel)]=\"model.email\"\n             #email=\"ngModel\">\n\n      <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-dark\">\n        Please provide a correct email address\n      </div>\n      <label>Password:</label>\n      <input type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" name=\"password\"\n             required\n             [(ngModel)]=\"model.password\"\n             #password=\"ngModel\"\n             minlength=\"4\">\n      <div [hidden]=\"password.valid || password.pristine\" class=\"alert alert-dark\">\n        Password must have at least 4 characters\n      </div>\n      <input type=\"submit\" [disabled]=\"loginForm.form.invalid\" value=\"Login\">\n    </form>\n  </div>\n</section>\n"
+module.exports = "<section>\n  <h2>Login</h2>\n  <div class=\"spacer\">\n    <form (ngSubmit)=\"login()\" #loginForm=\"ngForm\">\n      <label>Email:</label>\n      <input type=\"text\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\" name=\"email\"\n             required\n             email\n             [(ngModel)]=\"model.email\"\n             #email=\"ngModel\">\n\n      <div [hidden]=\"email.valid || email.pristine\" class=\"errorMessage\">\n        Please provide a correct email address\n      </div>\n      <label>Password:</label>\n      <input type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" name=\"password\"\n             required\n             [(ngModel)]=\"model.password\"\n             #password=\"ngModel\"\n             minlength=\"4\">\n      <div [hidden]=\"password.valid || password.pristine\" class=\"errorMessage\">\n        Password must have at least 4 characters\n      </div>\n      <input type=\"submit\" [disabled]=\"loginForm.form.invalid\" value=\"Login\">\n    </form>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -1594,7 +1611,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section>\n  <h2>Register</h2>\n  <div class=\"spacer\">\n    <form (ngSubmit)=\"register()\" #registerForm=\"ngForm\">\n      <label>Email:</label>\n      <input type=\"text\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\" name=\"email\"\n             required\n             email\n             [(ngModel)]=\"model.email\"\n             #email=\"ngModel\"\n            >\n      <div [hidden]=\"email.valid || email.pristine\" class=\"alert alert-dark\">\n        Please provide a correct email address\n      </div>\n      <label>Password:</label>\n      <input type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" required name=\"password\"\n             [(ngModel)]=\"model.password\"\n             #password=\"ngModel\"\n             minlength=\"4\">\n      <div [hidden]=\"password.valid || password.pristine\" class=\"alert alert-dark\">\n        Password must have at least 4 characters\n      </div>\n      <label>Repeat password:</label>\n      <input type=\"password\" class=\"form-control\" id=\"repeatedPassword\" placeholder=\"Confirm Password\" required name=\"repeatedPassword\"\n             [(ngModel)]=\"model.repeatedPassword\"\n             #repeatedPassword=\"ngModel\">\n      <div [hidden]=\"password.value === repeatedPassword.value || repeatedPassword.pristine\" class=\"alert alert-dark\">\n        Passwords do not match!\n      </div>\n      <input type=\"submit\" [disabled]=\"registerForm.form.invalid\" value=\"Register\">\n    </form>\n  </div>\n</section>\n\n\n"
+module.exports = "<section>\n  <h2>Register</h2>\n  <div class=\"spacer\">\n    <form (ngSubmit)=\"register()\" #registerForm=\"ngForm\">\n      <label>Email:</label>\n      <input type=\"text\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\" name=\"email\"\n             required\n             email\n             [(ngModel)]=\"model.email\"\n             #email=\"ngModel\"\n            >\n      <div [hidden]=\"email.valid || email.pristine\" class=\"errorMessage\">\n        Please provide a correct email address\n      </div>\n      <label>Password:</label>\n      <input type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\" required name=\"password\"\n             [(ngModel)]=\"model.password\"\n             #password=\"ngModel\"\n             minlength=\"4\">\n      <div [hidden]=\"password.valid || password.pristine\" class=\"errorMessage\">\n        Password must have at least 4 characters\n      </div>\n      <label>Repeat password:</label>\n      <input type=\"password\" class=\"form-control\" id=\"repeatedPassword\" placeholder=\"Confirm Password\" required name=\"repeatedPassword\"\n             [(ngModel)]=\"model.repeatedPassword\"\n             #repeatedPassword=\"ngModel\">\n      <div [hidden]=\"password.value === repeatedPassword.value || repeatedPassword.pristine\" class=\"errorMessage\">\n        Passwords do not match!\n      </div>\n      <input type=\"submit\" [disabled]=\"registerForm.form.invalid\" value=\"Register\">\n    </form>\n  </div>\n</section>\n\n\n"
 
 /***/ }),
 
@@ -1668,7 +1685,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to SoftUni Wiki!</h1>\n<section id=\"featured\">\n  <h2>Latest article</h2>\n  <article>\n    <h3>{{lastArticle.title}}</h3>\n    <p>\n     {{lastArticle.content}}\n    </p>\n    <div class=\"controls\">\n      <a routerLink=\"/article/details/{{lastArticle._id}}\">Read more</a>\n    </div>\n  </article>\n</section>\n<section id=\"recent\">\n  <h2>Recently added articles</h2>\n  <ul *ngFor=\"let article of articles\">\n    <li>\n      <a routerLink=\"/article/details/{{article._id}}\">{{article.title}}</a>\n    </li>\n  </ul>\n</section>\n"
+module.exports = "<section id=\"featured\">\n  <h2>Latest article</h2>\n  <article>\n    <h3>{{lastArticle.title}}</h3>\n    <p>\n     {{lastArticle.content}}\n    </p>\n    <div class=\"controls\">\n      <a routerLink=\"/article/details/{{lastArticle._id}}\">Read more</a>\n    </div>\n  </article>\n</section>\n<section id=\"recent\">\n  <h2>Recently added articles</h2>\n  <ul *ngFor=\"let article of articles; let i = index\">\n    <li>\n      <a routerLink=\"/article/details/{{article._id}}\">{{i+1}}.  {{article.title}}</a>\n    </li>\n  </ul>\n</section>\n"
 
 /***/ }),
 
@@ -1765,7 +1782,8 @@ var ErrorInterceptor = /** @class */ (function () {
         return next.handle(request).pipe(Object(rxjs_internal_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(function (err) {
             switch (err.status) {
                 case 401:
-                    _this.toastr.error(err.error.message, 'Warning!');
+                    console.dir(err);
+                    _this.toastr.error(err.error.message, 'Error!');
                     break;
                 case 400:
                     var message = Object.keys(err.error.errors).map(function (e) { return err.error.errors[e]; }).join('\n');
@@ -1873,7 +1891,7 @@ var JwtInterceptor = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".btn{\r\n  padding: 5px 10px;\r\n  cursor:pointer;\r\n}\r\n"
 
 /***/ }),
 
@@ -1998,7 +2016,7 @@ var NavigationUserComponent = /** @class */ (function () {
     NavigationUserComponent.prototype.ngOnInit = function () {
     };
     NavigationUserComponent.prototype.logout = function () {
-        localStorage.clear();
+        this.authService.logout();
         this.router.navigate(['/user/login']);
     };
     NavigationUserComponent = __decorate([

@@ -179,7 +179,7 @@ footer {
 
 .errorMessage{
   margin-top: 20px;
-  background-color: red;
+  color: red;
   text-align: center;
 }
 .infoMessage{

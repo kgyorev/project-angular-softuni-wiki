@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8a34daa-06c7-462e-86d3-017e53a4bf15" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/404/404.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/404/404.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/all-article/all-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/all-article/all-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/article-details/article-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/article-details/article-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/create-article/create-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/create-article/create-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/edit-article/edit-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/edit-details/edit-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/edit-details/edit-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/history-article/history-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/history-article/history-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/search-article/search-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/auth/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/auth/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/interceptors/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/interceptors/error.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/assets/stylesheets/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/assets/stylesheets/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/assets/stylesheets/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/assets/stylesheets/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../client/dist/project-angular-softuni-wiki/styles.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/article/article.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/article/article.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/users-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/users-controller.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -172,8 +163,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/controllers/users-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+            <state relative-caret-position="272">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -368,12 +359,12 @@
       <workItem from="1534401695800" duration="2863000" />
       <workItem from="1534506929477" duration="42000" />
       <workItem from="1534507143514" duration="1001000" />
-      <workItem from="1534761945491" duration="2538000" />
+      <workItem from="1534761945491" duration="4339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116478000" />
+    <option name="totallyTimeSpent" value="118279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -695,8 +686,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/users-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        <state relative-caret-position="272">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
         </state>
       </provider>
     </entry>
