@@ -1,5 +1,5 @@
-# Project-react-softuni-wiki
-React app
+# Project-angular-softuni-wiki
+Angular app
 Softuni Wiki
 
 
@@ -10,12 +10,12 @@ Since anyone can edit any article, it’s important that edit history is stored 
 <h2>Application Deploy</h2>
 
 Server is deployed in Heroku , server address is : https://softuni-wiki-server.herokuapp.com/  <br/>
-Web app (client) is hosted in icn.bg . Address is: http://wiki.android.bg <br/>
+Web app (client) is hosted in icn.bg . Address is: http://softwiki.android.bg <br/>
 Database is MongoDB hosted in: https://mlab.com <br/>
 GitHub of app is in : https://github.com/kgyorev/Project-react-softuni-wiki/ <br/>
 Where in GitHub is code for server and client
 
-<h2>NOTE: if you want to run server in local host you need to change remote.js file</h2> 
+<h2>NOTE: if you want to run server in local host you need to change article.service.ts and auth.service.ts files</h2> 
 const host = 'http://localhost:1337/'; // for local Host 
 <br/>
 const host = 'https://softuni-wiki-server.herokuapp.com:443/'; // For Heroku server 
