@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8a34daa-06c7-462e-86d3-017e53a4bf15" name="Default" comment="" />
+    <list default="true" id="b8a34daa-06c7-462e-86d3-017e53a4bf15" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -356,6 +360,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24904943" />
       <window_info id="Structure" order="1" weight="0.25" />
