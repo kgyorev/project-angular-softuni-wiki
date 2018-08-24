@@ -472,7 +472,6 @@ var ArticleDetailsComponent = /** @class */ (function () {
         var _this = this;
         this.articleService.getArticleDetails(this.id).subscribe(function (data) {
             // this.article.content = data.lastEdit.content;
-            console.dir(data);
             _this.article.title = data.article.title;
             _this.article._id = data.article._id;
             _this.article.content = data.article.lastEdit.content;
@@ -848,7 +847,6 @@ var EditArticleComponent = /** @class */ (function () {
     EditArticleComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.articleService.getArticleDetails(this.route.snapshot.params['id']).subscribe(function (data) {
-            console.dir(data);
             _this.bindingModel._id = data.article._id;
             _this.bindingModel.title = data.article.title;
             _this.bindingModel.content = data.article.lastEdit.content;
@@ -927,7 +925,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"spacer\">\n    <h2> {{article.title}}\n    </h2>\n    <article>\n      {{articleHistory.content}}\n    </article>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div *ngIf=\"article\" class=\"spacer\">\n    <h2> {{article.title}}\n    </h2>\n    <article>\n      {{articleHistory.content}}\n    </article>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -965,7 +963,6 @@ var EditDetailsComponent = /** @class */ (function () {
     EditDetailsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.articleService.articleEditDetailsById(this.id).subscribe(function (data) {
-            console.dir(data);
             _this.articleHistory = data.edit;
             _this.article = data.article;
         });
@@ -1003,7 +1000,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n  <h2>{{article.title}}</h2>\n  <div class=\"spacer\">\n    <h3>Edit hostory</h3>\n    <ul *ngFor=\"let articleHistory of articleHistoryLs;let i=index\">\n      <li>\n        <a routerLink=\"/article/details/edit/{{articleHistory._id}}\">{{i+1}}. {{i===0?\"Created On\":\"Updated On\"}}{{calcDate(articleHistory.creationDate)}}</a> by\n        <span class=\"author\">{{articleHistory.author.email}}</span>\n      </li>\n    </ul>\n  </div>\n</section>\n"
+module.exports = "<section *ngIf=\"article\">\n  <h2>{{article.title}}</h2>\n  <div class=\"spacer\">\n    <h3>Edit hostory</h3>\n    <ul *ngFor=\"let articleHistory of articleHistoryLs;let i=index\">\n      <li>\n        <a routerLink=\"/article/details/edit/{{articleHistory._id}}\">{{i+1}}. {{i===0?\"Created On\":\"Updated On\"}}{{calcDate(articleHistory.creationDate)}}</a> by\n        <span class=\"author\">{{articleHistory.author.email}}</span>\n      </li>\n    </ul>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -1041,7 +1038,6 @@ var HistoryArticleComponent = /** @class */ (function () {
     HistoryArticleComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.articleService.historyArticleById(this.id).subscribe(function (data) {
-            console.dir(data);
             _this.article = data.article;
             _this.articleHistoryLs = data.editLs;
         });
@@ -1685,7 +1681,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"featured\">\n  <h2>Latest article</h2>\n  <article>\n    <h3>{{lastArticle.title}}</h3>\n    <p>\n     {{lastArticle.content}}\n    </p>\n    <div class=\"controls\">\n      <a routerLink=\"/article/details/{{lastArticle._id}}\">Read more</a>\n    </div>\n  </article>\n</section>\n<section id=\"recent\">\n  <h2>Recently added articles</h2>\n  <ul *ngFor=\"let article of articles; let i = index\">\n    <li>\n      <a routerLink=\"/article/details/{{article._id}}\">{{i+1}}.  {{article.title}}</a>\n    </li>\n  </ul>\n</section>\n"
+module.exports = "<section *ngIf=\"lastArticle\" id=\"featured\">\n  <h2>Latest article</h2>\n  <article>\n    <h3>{{lastArticle.title}}</h3>\n    <p>\n     {{lastArticle.content}}\n    </p>\n    <div class=\"controls\">\n      <a routerLink=\"/article/details/{{lastArticle._id}}\">Read more</a>\n    </div>\n  </article>\n</section>\n<section *ngIf=\"articles\" id=\"recent\">\n  <h2>Recently added articles</h2>\n  <ul *ngFor=\"let article of articles; let i = index\">\n    <li>\n      <a routerLink=\"/article/details/{{article._id}}\">{{i+1}}.  {{article.title}}</a>\n    </li>\n  </ul>\n</section>\n"
 
 /***/ }),
 
@@ -1719,7 +1715,6 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.articleService.getHomePage().subscribe(function (data) {
-            console.dir(data);
             _this.lastArticle = data.article;
             _this.articles = data.articles;
             _this.lastArticle.content = data.displayContent;
@@ -1902,7 +1897,7 @@ module.exports = ".btn{\r\n  padding: 5px 10px;\r\n  cursor:pointer;\r\n}\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<aside>\n  <div class=\"center\">\n    <img class=\"logo\" src=\"../assets/img/logo.png\" alt=\"logo\">\n  </div>\n\n  <nav>\n    <a routerLink=\"/\">Main Page</a>\n    <a routerLink=\"/article/details/{{lastArticle._id}}\">Latest Article</a>\n    <a routerLink=\"/article/all\">All Articles</a>\n    <!--<form>-->\n      <!--<input type=\"text\">-->\n      <!--<input type=\"submit\" value=\"Search\">-->\n    <!--</form>-->\n    <div>\n      <input type=\"text\" [(ngModel)]=\"searchText\" name=\"searchText\"/>\n      <button class=\"btn\" (click)=\"search()\">Search</button>\n    </div>\n    <a routerLink=\"/article/create\">Create New Article</a>\n  </nav>\n</aside>\n"
+module.exports = "<aside>\n  <div class=\"center\">\n    <img class=\"logo\" src=\"../assets/img/logo.png\" alt=\"logo\">\n  </div>\n\n  <nav *ngIf=\"lastArticle\">\n    <a routerLink=\"/\">Main Page</a>\n    <a routerLink=\"/article/details/{{lastArticle._id}}\">Latest Article</a>\n    <a routerLink=\"/article/all\">All Articles</a>\n    <!--<form>-->\n      <!--<input type=\"text\">-->\n      <!--<input type=\"submit\" value=\"Search\">-->\n    <!--</form>-->\n    <div>\n      <input type=\"text\" (keydown)=\"onKeydown($event)\" [(ngModel)]=\"searchText\" name=\"searchText\"/>\n      <button class=\"btn\" (click)=\"search()\">Search</button>\n    </div>\n    <a routerLink=\"/article/create\">Create New Article</a>\n  </nav>\n</aside>\n"
 
 /***/ }),
 
@@ -1942,6 +1937,11 @@ var NavigationArticleComponent = /** @class */ (function () {
         this.articleService.getHomePage().subscribe(function (data) {
             _this.lastArticle = data.article;
         });
+    };
+    NavigationArticleComponent.prototype.onKeydown = function (event) {
+        if (event.key === 'Enter') {
+            this.search();
+        }
     };
     NavigationArticleComponent.prototype.search = function () {
         this.router.navigateByUrl("article/search?searchStr=" + this.searchText);

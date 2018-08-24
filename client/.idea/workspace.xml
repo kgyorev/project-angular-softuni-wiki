@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afbbf13e-ce03-4da7-943d-240a1018f226" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/article/article-details/article-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/article-details/article-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/edit-article/edit-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/edit-details/edit-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/article/history-article/history-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/history-article/history-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/article/history-article/history-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/article/history-article/history-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navigation-article/navigation-article.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="afbbf13e-ce03-4da7-943d-240a1018f226" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -573,8 +561,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="npm.build" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -593,24 +581,23 @@
       <workItem from="1534506631081" duration="136000" />
       <workItem from="1534506987347" duration="24000" />
       <workItem from="1534507019059" duration="1218000" />
-      <workItem from="1534509295524" duration="13905000" />
+      <workItem from="1534509295524" duration="14025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86585000" />
+    <option name="totallyTimeSpent" value="86705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75961536" visible="true" weight="0.24968314" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75961536" visible="true" weight="0.24968314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.24038461" side_tool="true" visible="true" weight="0.24968314" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49873257" visible="true" weight="0.3001346" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49873257" visible="true" weight="0.3001346" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
