@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.articleService.getHomePage().subscribe(data => {
-      console.dir(data);
       this.lastArticle = data.article;
       this.articles = data.articles;
       this.lastArticle.content = data.displayContent;

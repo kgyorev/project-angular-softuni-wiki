@@ -11,6 +11,7 @@ import {ArticleModel} from '../article/models/article.model';
 export class NavigationArticleComponent implements OnInit {
   searchText = '';
   lastArticle: ArticleModel;
+
   constructor(private articleService: ArticleService, private router: Router) {
   }
 
@@ -18,6 +19,12 @@ export class NavigationArticleComponent implements OnInit {
     this.articleService.getHomePage().subscribe(data => {
       this.lastArticle = data.article;
     });
+  }
+
+  onKeydown(event) {
+    if (event.key === 'Enter') {
+      this.search();
+    }
   }
 
   search() {

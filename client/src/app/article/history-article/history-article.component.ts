@@ -21,7 +21,6 @@ export class HistoryArticleComponent implements OnInit {
 
   ngOnInit() {
     this.articleService.historyArticleById(this.id).subscribe(data => {
-      console.dir(data);
       this.article = data.article;
       this.articleHistoryLs = data.editLs;
     });

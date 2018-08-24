@@ -20,7 +20,6 @@ export class EditDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.articleService.articleEditDetailsById(this.id).subscribe(data => {
-      console.dir(data);
       this.articleHistory = data.edit;
       this.article = data.article;
     });

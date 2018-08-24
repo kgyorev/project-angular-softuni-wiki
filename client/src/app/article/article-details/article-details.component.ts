@@ -22,7 +22,6 @@ export class ArticleDetailsComponent implements OnInit {
   ngOnInit() {
     this.articleService.getArticleDetails(this.id).subscribe(data => {
       // this.article.content = data.lastEdit.content;
-      console.dir(data);
       this.article.title = data.article.title;
       this.article._id = data.article._id;
       this.article.content = data.article.lastEdit.content;

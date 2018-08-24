@@ -1,4 +1,4 @@
-<section id="featured">
+<section *ngIf="lastArticle" id="featured">
   <h2>Latest article</h2>
   <article>
     <h3>{{lastArticle.title}}</h3>
@@ -10,7 +10,7 @@
     </div>
   </article>
 </section>
-<section id="recent">
+<section *ngIf="articles" id="recent">
   <h2>Recently added articles</h2>
   <ul *ngFor="let article of articles; let i = index">
     <li>
