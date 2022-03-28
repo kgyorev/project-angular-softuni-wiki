@@ -29,14 +29,23 @@ module.exports = (app) => {
   // For user validation we will use passport module.
   app.use(passport.initialize())
   app.use(passport.session())
-  //app.use(cors())
-  const corsOptions = {
-    origin: '*',
-    credentials: true,            //access-control-allow-credentials:true
-    optionSuccessStatus: 200,
-  }
+  app.use(cors())
 
-  app.use(cors(corsOptions)) // Use this after the variable declaration
+  app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested, Content-Type, Accept Authorization"
+    );
+    if (req.method === "OPTIONS") {
+      res.header(
+        "Access-Control-Allow-Methods",
+        "POST, PUT, PATCH, GET, DELETE"
+      );
+      return res.status(200).json({})
+    }
+    next()
+  });
 
   app.use((req, res, next) => {
     if (req.user) {
